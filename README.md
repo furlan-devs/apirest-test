@@ -1,6 +1,6 @@
-#APIRest Spring + JPA e PostgreSQL
+# APIRest Spring + JPA e PostgreSQL
 
-##Requisitos para rodar a aplicação:
+## Requisitos para rodar a aplicação:
 
 Clonar o repositorio ou baixar os arquivos.
 -https://github.com/furlan-devs/apirest-test.git
