@@ -28,7 +28,7 @@ A Aplicação consite em:
 	No email também disponibilizarei a biblioteca do Postman.
 	
 	Cadastro de Itens:
-	**POST [url base]/api/items**
+	POST [url base]/api/items
 	
 		Entrada:
 			{
@@ -44,7 +44,8 @@ A Aplicação consite em:
 				"type": "p"
 			}
 			
-	**GET  [url base]/api/items**
+	GET  [url base]/api/items
+	
 		Retorno:
 		[
 			{
@@ -55,7 +56,8 @@ A Aplicação consite em:
 			}
 		]
 	
-	**GET  [url base]/api/items/{id}**
+	GET  [url base]/api/items/{id}
+
 		localhost:8080/api/items/b7c1b7e0-2c6b-4d15-be10-ab7e4bee2404
 		
 		Retorno: 
@@ -67,7 +69,8 @@ A Aplicação consite em:
 		}
 		
 
-	**PUT  [url base]/api/items/{id}**
+	PUT  [url base]/api/items/{id}
+	
 		localhost:8080/api/items/7b70591b-5f15-4d76-bff6-a1bb91ca9cd4
 		
 		Entrada:
@@ -86,15 +89,16 @@ A Aplicação consite em:
 		}
 	
 	
-	**DEL [ url base]/api/items/{id}**
+	DEL [url base]/api/items/{id}
 		localhost:8080/api/items/3f422148-6369-4898-ba32-f65cfcdae35
 		Sem retorno.
 
 
 
 	
-	**Cadastro de Ordens:**
-	**POST [url base]/api/orders**
+	Cadastro de Ordens:
+	POST [url base]/api/orders
+	
 		Entrada:
 		{
 			"number":10,
@@ -110,7 +114,8 @@ A Aplicação consite em:
 		  	"totalValue": 450.6
 		}
 			
-	**GET  [url base]/api/orders**
+	GET  [url base]/api/orders
+	
 		Retorno:
 		[
     			{
@@ -122,7 +127,8 @@ A Aplicação consite em:
     			}
 		]
 	
-	**GET  [url base]/api/orders/{id}**
+	GET  [url base]/api/orders/{id}
+	
 		localhost:8080/api/items/706615fe-5f07-4975-80dc-475e994b435a
 		
 		Retorno: 
@@ -135,7 +141,8 @@ A Aplicação consite em:
 		}
 		
 
-	**PUT  [url base]/api/orders/{id}**
+	PUT  [url base]/api/orders/{id}
+	
 		localhost:8080/api/items/7b70591b-5f15-4d76-bff6-a1bb91ca9cd4
 		
 		Entrada:
@@ -155,6 +162,7 @@ A Aplicação consite em:
 		}
 
 	
-	**DEL [ url base]/api/orders/{id}**
+	DEL [url base]/api/orders/{id}
+	
 		localhost:8080/api/orders/706615fe-5f07-4975-80dc-475e994b435a
 		Sem retorno.
