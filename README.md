@@ -12,9 +12,8 @@ Aguardar a IDE baixar as dependencias:
 	-Spring Data jpa
 	-modelMapper
 
-Criar um banco no PostgreSQL com o nome 'senior-apirest' ou alterar o nome no arquivo 
-'application.properties' na linha abaixo:
--spring.datasource.url= jdbc:postgresql://localhost:5432/{nome do BD Aqui}
+Criar um banco no PostgreSQL com o nome 'senior-apirest' ou se caso tiver outro nome. alterar no arquivo'application.properties' na linha abaixo:
+-spring.datasource.url= jdbc:postgresql://localhost:5432/**{nome do BD Aqui}**
 	
 Feito isso, só acessar o Arquivo "ApirestApplication" e rodar a aplicação em 
 "public class ApirestApplication"
@@ -96,67 +95,64 @@ Cadastro de Ordens:
 POST [url base]/api/orders
 	
 		Entrada:
-			{
-				"number":10,
-				"percentualDiscount": "10",
-				"totalValue": "450.60"
-			}
+		{
+			"number":10,
+			"percentualDiscount": "10",
+			"totalValue": "450.60"
+		}
 		Retorno:
-			{
-    "id": "706615fe-5f07-4975-80dc-475e994b435a",
-    "number": 10,
-    "date": "2022-08-22T15:29:40.487+00:00",
-    "percentualDiscount": 10.0,
-    "totalValue": 450.6
-}
+		{
+			"id": "706615fe-5f07-4975-80dc-475e994b435a",
+			"number": 10,
+			"date": "2022-08-22T15:29:40.487+00:00",
+			"percentualDiscount": 10.0,
+		  	"totalValue": 450.6
+		}
 			
 	GET  [url base]/api/orders
 		Retorno:
 		[
-    {
-        "id": "706615fe-5f07-4975-80dc-475e994b435a",
-        "number": 10,
-        "date": "2022-08-22T15:29:40.487+00:00",
-        "percentualDiscount": 10.0,
-        "totalValue": 450.6
-    }
-]
+    			{
+       			"id": "706615fe-5f07-4975-80dc-475e994b435a",
+        		"number": 10,
+			"date": "2022-08-22T15:29:40.487+00:00",
+			"percentualDiscount": 10.0,
+			"totalValue": 450.6
+    			}
+		]
 	
 	GET  [url base]/api/orders/{id}
 		localhost:8080/api/items/706615fe-5f07-4975-80dc-475e994b435a
 		
 		Retorno: 
 		{
-    "id": "706615fe-5f07-4975-80dc-475e994b435a",
-    "number": 10,
-    "date": "2022-08-22T15:29:40.487+00:00",
-    "percentualDiscount": 10.0,
-    "totalValue": 450.6
-}
+		    "id": "706615fe-5f07-4975-80dc-475e994b435a",
+		    "number": 10,
+		    "date": "2022-08-22T15:29:40.487+00:00",
+		    "percentualDiscount": 10.0,
+		    "totalValue": 450.6
+		}
 		
 
 	PUT  [url base]/api/orders/{id}
 		localhost:8080/api/items/7b70591b-5f15-4d76-bff6-a1bb91ca9cd4
 		
 		Entrada:
-		{
 			{
-    "number":"2",
-    "date" :"2022-08-21T19:40:34.717+00:00",
-    "percentualDiscount": "20",
-    "totalValue": "450.60"
-}
+			    "number":"2",
+			    "date" :"2022-08-21T19:40:34.717+00:00",
+			    "percentualDiscount": "20",
+			    "totalValue": "450.60"
+			}
+		Retorno:
+		{
+		    "id": "706615fe-5f07-4975-80dc-475e994b435a",
+		    "number": 2,
+		    "date": "2022-08-21T19:40:34.717+00:00",
+		    "percentualDiscount": 20.0,
+		    "totalValue": 450.6
 		}
 
-		Retorno:
-{
-    "id": "706615fe-5f07-4975-80dc-475e994b435a",
-    "number": 2,
-    "date": "2022-08-21T19:40:34.717+00:00",
-    "percentualDiscount": 20.0,
-    "totalValue": 450.6
-}
-	
 	
 	DEL [ url base]/api/orders/{id}
 		localhost:8080/api/orders/706615fe-5f07-4975-80dc-475e994b435a
