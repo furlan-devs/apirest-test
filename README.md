@@ -5,20 +5,20 @@
 Clonar o repositorio ou baixar os arquivos.
 -https://github.com/furlan-devs/apirest-test.git
 
-Aguardar a IDE baixar as dependencias:
-	-Spring Web
-	-Lombok
-	-PostgreSQL Driver
-	-Spring Data jpa
-	-modelMapper
+Aguardar a IDE baixar as depêndencias:
+- Spring Web
+- Lombok
+- PostgreSQL Driver
+- Spring Data jpa
+- modelMapper
 
 Criar um banco no PostgreSQL com o nome 'senior-apirest' ou se caso tiver outro nome. alterar no arquivo'application.properties' na linha abaixo:
--spring.datasource.url= jdbc:postgresql://localhost:5432/**{nome do BD Aqui}**
+- spring.datasource.url= jdbc:postgresql://localhost:5432/**{nome do BD Aqui}**
 	
 Feito isso, só acessar o Arquivo "ApirestApplication" e rodar a aplicação em 
 "public class ApirestApplication"
 
-A Aplicação conssite em:
+A Aplicação consite em:
 	-Cadastro de Itens - Concluído
 	-Cadastro de Ordens - 80%
 	-Implementar Itens do pedido - Em construção
@@ -91,9 +91,10 @@ A Aplicação conssite em:
 		Sem retorno.
 
 
-Cadastro de Ordens:
-POST [url base]/api/orders
+
 	
+	Cadastro de Ordens:
+	POST [url base]/api/orders
 		Entrada:
 		{
 			"number":10,
